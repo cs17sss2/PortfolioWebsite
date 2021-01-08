@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Raleway', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-grey: #F6F7FA;
+    --clr-dark: #ffffff
+    --clr-gradientl: #50C2C2;
+    --clr-gradientr: #4878A9;
+    
+}
+
+@media (min-width: 800px){
+    :root{
+        --fs-h1: 150px;
+        --fs-h2: 64px;
+        --fs-h3: 48px;
+        --fs-h4: 34px;
+        --fs-p:  22px;
+    }
+}
+
+body {
+    font-family: var(--ff-primary);
+        background: var(--clr-light);
+        margin: 0;
+}
+
+img{
+    display: block;
+}
+
+/*Typography*/
+h1,
+h2,
+h3{
+    line-height: 1.3;
+    margin: 0;
+    font-family: var(--ff-primary);    
+}
+
+h1{
+    font-size: var(--fs-h1);
+    font-weight: 800;
+    line-height: 0.9em;
+    width: 5em;
+
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  
+}
+h2{
+    font-size: var(--fs-h2);
+}
+h3{
+    font-size: var(--fs-h3);
+}
+p{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-p);
+}
+
+.container {
+    width: 1250px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.header{
+    height: 100vh;
+}
+
+.resumeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 70px;
+    margin-top: 110px;
+    border-radius: 80px;
+}
+
+h1{
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+      #CA4246 16.666%, 
+      #E16541 16.666%, 
+      #E16541 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #8B9862 50%, 
+      #8B9862 66.666%, 
+      #476098 66.666%, 
+      #476098 83.333%, 
+      #A7489B 83.333%);
+    background-size: 57%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: rainbow-text-animation-rev 1.1s ease forwards;
+  }
+  h1:hover {
+    animation: rainbow-text-animation 0.75s ease forwards;
+  }
+  @keyframes rainbow-text-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+  }
+  @keyframes rainbow-text-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }
+
+  h2, h3{
+    background-color: #CA4246;
+    background-image: linear-gradient(
+          45deg,
+          #CA4246 16.666%, 
+          #E16541 16.666%, 
+          #E16541 33.333%, 
+          #F18F43 33.333%, 
+          #F18F43 50%, 
+          #8B9862 50%, 
+          #8B9862 66.666%, 
+          #476098 66.666%, 
+          #476098 83.333%, 
+          #A7489B 83.333%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-text-simple-animation-rev 1.25s ease forwards;
+  }
+  h2:hover,h3:hover{
+      animation: rainbow-text-simple-animation 0.825s ease-in forwards;
+  }
+  @keyframes rainbow-text-simple-animation-rev {
+      0% {
+          background-size: 650%;
+      }
+      40% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 100%;
+      }
+  }
+  @keyframes rainbow-text-simple-animation {
+      0% {
+          background-size: 100%;
+
+
+          
+      }
+      80% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 650%;
+      }
+  }
+
+.about{
+    position: relative;
+    height: 850px;
+  }
+
+.about .container{
+    background-color: green;
+}
+
+.about p{
+    float: left;
+    margin-top: 25px;
+    width: 60%;
+    left: 0;
+    height: 453px;
+    background-color: lightgreen;
+}
+
+.about img{
+    background-color: darkgray;
+    float: right;
+    height: auto;
+    width: 350px;
+}
